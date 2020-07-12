@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Startup</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+	<title>Dark mode theme</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+</head>
+<body id = "tijelo">
 
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
-    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <!-- Your own stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <div class="container d-flex align-items-center h-100">
-      <div class="row">
-        <header class="text-center col-12">
-          <h1 class = "text-uppercase"><strong>The biggest startup event of the year</strong></h1>
-        </header>
+	<nav id = "nav" class="zone sticky">
+	    <ul class="main-nav">
+	        <li><a id = "a1" href="">About</a></li>
+	        <li><a id = "a2" href="">Products</a></li>
+	        <li><a id = "a3" href="">Our Team</a></li>
+	        <li class="push"><a id = "a4" href="">Contact</a></li>
+	        <li>	
+	        	<label class="switch">
+		    	<input id = "toggle" type="checkbox">
+		    	<span class="slider round"></span>
+		    	
+				</label>
+			</li>
+	    </ul>
+	</nav>
 
-        <div class="buffer col-12"></div>
 
-        <section class="text-center col-12">
-          <hr>
-          <button class = "btn btn-primary btn-xl">Find out more</button>
-        </section>
-      </div>
-    </div>
+	<div class="container">
+		<h1>Irfan Hadžibajrić</h1>
+		<ul>
+			<li><a id = "a7" href="https://github.com/irfanhadzibajric">GitHub</a></li>
+			<li><a id = "a8" href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">LinkedIn</a></li>
 
-  </body>
+		</ul>
+	</div>
+
+
+	<div class="zone grid-wrapper">
+	    <div id="proj1" class="box zone"><img src="./Weather/WeatherCropped.png" onclick="weather()"><p>Weather</p></div>
+	    <div id = "proj2" class="box zone"><img src="./AdminDeveloper/AdminDeveloperLoginCropped.png" onclick="adminDeveloper()"><p>Admin Developer site</p></div>
+
+	</div>
+
+	<script type="text/javascript" src = "script.js"></script>
+</body>
 </html>

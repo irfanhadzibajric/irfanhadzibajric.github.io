@@ -4,6 +4,7 @@ body{
   background-color: #f3ecc2;
 }
 
+
 .zone {
     /*padding:30px 50px;*/
     cursor:pointer;
@@ -23,11 +24,10 @@ body{
 
 .container {
     /*show heigh: auto*/
-    height: 40vh; 
+    height: 70vh; 
     display: flex;
     align-items: center;
     justify-content: center;
-
 
 }
 
@@ -36,41 +36,6 @@ body{
 
 }
 
-/***********************************************************************
- *  Grid Panel
- **********************************************************************/
-.grid-wrapper {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-gap: 20px;
-}
-
-.box {
-    background-color: #ba7967;
-    padding: 50px;
-    margin: 20px;
-    font-size: 20px;
-    text-align: center;
-}
-
-.box > img {
-    width: 100%;
-}
-
-.box:hover {
-    -webkit-transform: rotate(-7deg);
-    -moz-transform: rotate(-7deg);
-    -o-transform: rotate(-7deg);
-    transform: rotate(-7deg);
-    color:#ffa931;
-}
-
-.box > img {
-    width: 100%;
-    height: auto;
-}
-
-/*nav */
 .main-nav {
     display: flex;
     list-style: none;
@@ -99,22 +64,11 @@ a {
     text-decoration: none;
 }
 
-a:hover{
-  color:red;
-}
-
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
-
-footer {
-    text-align: center;
-    background-color: #444;
-}
-
-/*Switch*/
 .switch {
   position: relative;
   display: inline-block;
@@ -177,3 +131,31 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.container{
+	margin-top:10%;
+	display: flex;
+	flex-wrap: wrap; /* izbjegavanje scrolla u stranu */
+	justify-content: center;
+	height: 10px;
+}
+
+h1{
+	
+	font-size: 3em;
+	width: 400px;
+	text-align: center;
+	margin:5px;
+}
+
+img{
+	width: 80%;
+	height: ;
+	margin:5px;
+	transition: all 1s; /* vrijeme za koje ce se transforimsati */
+}
+
+
+.li1{
+	list-style-type: none;
+	font-weight: bold;
+}
